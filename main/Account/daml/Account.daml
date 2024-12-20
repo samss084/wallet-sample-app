@@ -3,9 +3,9 @@
 
 -- This module implements an account for holding assets.
 -- An AssetHoldingAccount can hold only one type of asset. A separate AssetHoldingAccount needs to be created for each type of asset.
--- Account creation follows propose/accept pattern implemented through AssetHoldingAccount template with
+-- Account creation follows propose/DENIEDpattern implemented through AssetHoldingAccount template with 
 -- Invite_New_Asset_Holder choice, that creates AssetHoldingAccountProposal contract. 
--- AssetHoldingAccountProposal_Denychoice creates new AssetHoldingAccount template with the
+-- AssetHoldingAccountProposal_Deny choice creates new AssetHoldingAccount template with the
 -- proposal recipient party as the account owner.
 module Account where
 
